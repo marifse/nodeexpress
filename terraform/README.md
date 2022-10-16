@@ -13,9 +13,9 @@
 </p>
 
 
-# Deploy NodeJS+Cloudant Application on IBM Cloud using Terraform
+# Deploy Express+Cloudant Application on IBM Cloud using Terraform
 
-This document will describe how to deploy NodeJS application on IBM Cloud Kubernetes Service using Terraform (IaC Tool).
+This document will describe how to deploy Node Express application on IBM Cloud Kubernetes Service using Terraform (IaC Tool).
 
 ### Contents
 
