@@ -82,7 +82,7 @@ terraform apply
 
 • Confirm with “yes”.
 
-This terraform script will provision the Cloudant database, and a Tekton toolchain, which is auto triggered on its creation and deploying the application to the created IKS Kubernetes cluster.
+This terraform script will provision the Cloudant database, and a Tekton toolchain, which is auto triggered on its creation and deploying the application to the existing IKS Kubernetes cluster.
 
 To get the URL for deployed application, go to Toolchain service in IBM Cloud console, and select the region where the toolchain has been created and go to triggered event, and there in deployment stage, you can find the application URL as IPAddress:port in last lines of the executions. Open that URL in browser and you can see the NodeExpress application deployed there.
 
