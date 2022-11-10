@@ -22,8 +22,8 @@ This document will describe how to deploy Node Express application on IBM Cloud 
 #### 1.     Introduction
 #### 2.     Pre-requisites
 #### 3.     Deploying to IBM Cloud using Terraform
-#### 3.1	    Using Tekton Toolchain pipeline
-#### 3.1.1      To an existing Kubernetes cluster
+#### 3.1	    To an existing Kubernetes cluster with Tekton Toolchain pipeline
+
 
 ### 1.0 Introduction
 
@@ -42,7 +42,7 @@ To deploy Node Express application on IBM Cloud Kubernetes service using Terrafo
   
 Note: This repo include the terraform code to deploy the application to an existing Kubernetes Cluster, therefor you should have a IBM IKS cluster ready and do not forget to replace the variable value for the cluster name in the variables.tf file with your existing cluster name. 
 
-### 3.0	Deploying to IBM Cloud using Terraform
+### 3.0	Deploying to IBM Cloud using Terraform 
 
 <p align="center">
     <a href="https://cloud.ibm.com/developer/appservice/create-app?defaultDeploymentToolchain=&defaultLanguage=NODE&navMode=starterkits&starterKit=3f3f65c6-4a2c-3255-8e80-d2ac52ca608a">
@@ -55,9 +55,8 @@ To start deploying, clone the repo to local machine using the following command 
 ```bash
 git clone https://github.com/marifse/nodeexpress
 ```
-### 3.1	Using a Tekton Toolchain pipeline
 
-### 3.1.1 To an Existing Kubernetes cluster
+### 3.1. To an Existing Kubernetes cluster with Tekton Toolchain pipeline
 
 To deploy Node Express to a existing Kubernetes cluster, clone the repo as mentioned in above step 3.0, and follow the steps below. 
 
