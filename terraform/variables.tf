@@ -1,7 +1,7 @@
 variable "ibmcloud_api_key" {
   type        = string
   description = "The IAM API Key for IBM Cloud access (https://cloud.ibm.com/iam/apikeys)"
-  default = ""
+  default = "otP2xoC9STgnVERCk_ioyNdn2WyrS8EUYVeRjGuqI4tw"
 }
 
 variable "resource_group" {
@@ -49,7 +49,7 @@ variable "public_vlan_num" {
 }
 
 variable "kube_version" {
-  default     = "1.24.7"
+  default     = "1.24.8"
   description = "Version of Kubernetes to apply to the new Kubernetes cluster"
 }
 

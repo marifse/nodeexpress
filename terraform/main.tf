@@ -13,8 +13,6 @@ resource "random_string" "random" {
   min_lower = 4
 }
 
-
-
 data "ibm_resource_group" "group" {
   name = var.resource_group
 }
@@ -66,8 +64,6 @@ resource "ibm_resource_instance" "cd_instance_1" {
 
 }
 
-
-
 resource "ibm_cd_toolchain" "toolchain_instance" {
   name        = "cloudant-terraform-toolchain-node-${random_string.random.result}"
   description = "A sample toolchain to test the API"
@@ -91,7 +87,7 @@ resource "ibm_cd_toolchain_tool_pipeline" "ci_pipeline" {
   toolchain_id = ibm_cd_toolchain.toolchain_instance.id
   parameters {
     name = "ci-pipeline"
-    type = "tekton"
+    #type = "tekton"
   }
 }
 
