@@ -121,7 +121,7 @@ resource "ibm_cd_tekton_pipeline_definition" "ci_utils_task_def" {
 #    event_listener  = var.ci_pipeline_scm_trigger_listener_name
 #    scm_source {
 #      url     = var.app_repo
-#      branch  = "master"
+#      branch  = "main"
 #    }
 #    events {
 #      push                = false
@@ -153,7 +153,7 @@ source {
 type = "git"
         properties {
 url = var.app_repo
-branch = "master"
+branch = "main"
 }
 }
 events = ["push", "pull_request" ]

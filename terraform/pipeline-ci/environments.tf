@@ -15,7 +15,7 @@ resource "ibm_cd_tekton_pipeline_property" "ci_env_app_name" {
 resource "ibm_cd_tekton_pipeline_property" "ci_env_branch" {
   name           = "branch"
   type           = "text"
-  value          = "master"
+  value          = "main"
   pipeline_id    = var.pipeline_id         
 }
 

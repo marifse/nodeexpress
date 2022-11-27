@@ -67,7 +67,7 @@ resource "ibm_cd_tekton_pipeline_trigger" "pr_pipeline_scm_trigger" {
     event_listener  = var.pr_pipeline_scm_trigger_listener_name
     scm_source {
       url       = var.app_repo
-      branch    = "master"
+      branch    = "main"
     }
     events {
       push                = true
