@@ -93,7 +93,7 @@ resource "ibm_cd_toolchain_tool_pipeline" "ci_pipeline" {
 
 module "pipeline-ci" {
   source                    = "./pipeline-ci"
-  depends_on                = [ module.repositories ]
+  #depends_on                = [ module.repositories ]
   ibm_cloud_api_key         = var.ibmcloud_api_key
   region                    = var.region
   pipeline_id               = split("/", ibm_cd_toolchain_tool_pipeline.ci_pipeline.id)[1]
@@ -108,6 +108,9 @@ module "pipeline-ci" {
   app_repo                  = module.repositories.app_repo_url 
   pipeline_repo             = module.repositories.pipeline_repo_url
   tekton_tasks_catalog_repo = module.repositories.tekton_tasks_catalog_repo_url
+  #app_repo                  = var.app_repo 
+  #pipeline_repo             = var.pipeline_repo
+  #tekton_tasks_catalog_repo = var.tekton_tasks_catalog_repo
   kp_integration_name       = var.ibmcloud_api_key
 }
 

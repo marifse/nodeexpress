@@ -1,4 +1,4 @@
-variable "pipeline_id" {
+ variable "pipeline_id" {
 }
 
 variable "resource_group" {
@@ -45,6 +45,18 @@ variable "pipeline_repo" {
 variable "tekton_tasks_catalog_repo" {
   default     = "https://us-south.git.cloud.ibm.com/open-toolchain/hello-helm.git"
 }
+
+#variable "app_repo" {
+#  default     = "https://github.com/marifse/nodeexpress.git"
+#}
+
+#variable "pipeline_repo" {
+#  default     = "https://us-south.git.cloud.ibm.com/open-toolchain/simple-helm-toolchain.git"
+#}
+
+#variable "tekton_tasks_catalog_repo" {
+#  default     = "https://us-south.git.cloud.ibm.com/open-toolchain/tekton-catalog.git"
+#}
 
 variable "ci_pipeline_manual_trigger_name" {
   type        = string

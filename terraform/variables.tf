@@ -68,7 +68,7 @@ variable "container_registry_namespace" {
 variable "app_repo" {
   type        = string
   description = "Repository url for the repository containing application source code."
-  default     = "https://github.com/marifse/nodeexpress"
+  default     = "https://github.com/marifse/nodeexpress.git"
 }
 
 variable "pipeline_repo" {
